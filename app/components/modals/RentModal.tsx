@@ -131,8 +131,8 @@ const RentModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Which of these best describes your place?"
-        subtitle="Pick a category"
+        title="Аль нь таны газрын төрөлд хамгийн дөхөм байна?"
+        subtitle="Сонгоно уу"
       />
       <div 
         className="
@@ -163,8 +163,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Where is your place located?"
-          subtitle="Help guests find you!"
+          title="Хаана вэ?"
+          subtitle="Зочинд олоход туслаарай!"
         />
         <CountrySelect 
           value={location} 
@@ -179,28 +179,28 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Share some basics about your place"
-          subtitle="What amenitis do you have?"
+          title="Богино мэдээлэл оруулаарай"
+          subtitle="Амжилт!"
         />
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
           value={guestCount}
           title="Guests" 
-          subtitle="How many guests do you allow?"
+          subtitle="Хэдэн хүний багтаамжтай вэ?"
         />
         <hr />
         <Counter 
           onChange={(value) => setCustomValue('roomCount', value)}
           value={roomCount}
           title="Rooms" 
-          subtitle="How many rooms do you have?"
+          subtitle="Хэдэн өрөөтэй вэ?"
         />
         <hr />
         <Counter 
           onChange={(value) => setCustomValue('bathroomCount', value)}
           value={bathroomCount}
           title="Bathrooms" 
-          subtitle="How many bathrooms do you have?"
+          subtitle="Хэдэн ариун цэврийн өрөөтэй вэ?"
         />
       </div>
     )
@@ -210,8 +210,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Add a photo of your place"
-          subtitle="Show guests what your place looks like!"
+          title="Өөрийн хангийн тухай зураг оруулна уу"
+          subtitle="Зочидод зориулаад гоё зургаа оруулаарай!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -225,8 +225,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="How would you describe your place?"
-          subtitle="Short and sweet works best!"
+          title="Та энэ газрын тухай тайлбарлана уу?"
+          subtitle="Амжилт!"
         />
         <Input
           id="title"
@@ -253,8 +253,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Now, set your price"
-          subtitle="How much do you charge per night?"
+          title="Үнээ тодорхойлно уу"
+          subtitle="Нэг хоноход хэд вэ?"
         />
         <Input
           id="price"
@@ -274,7 +274,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="Airbnb your home!"
+      title="Hang бол таны гэр!"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}
