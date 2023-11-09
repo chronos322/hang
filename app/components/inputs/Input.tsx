@@ -5,7 +5,7 @@ import {
   FieldValues, 
   UseFormRegister 
 } from "react-hook-form";
-import { BiDollar } from "react-icons/bi";
+import { TbCurrencyTugrik } from "react-icons/tb";
 
 interface InputProps {
   id: string;
@@ -31,7 +31,7 @@ const Input: React.FC<InputProps> = ({
   return (
     <div className="w-full relative">
       {formatPrice && (
-        <BiDollar
+        <TbCurrencyTugrik
           size={24}  
           className="
             text-neutral-700

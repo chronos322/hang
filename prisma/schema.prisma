@@ -12,7 +12,6 @@ datasource db {
 
 model User {
   id              String @id @default(auto()) @map("_id") @db.ObjectId
-  type            String @db.String @default("user")
   name            String?
   email           String?   @unique
   emailVerified   DateTime?
@@ -59,7 +58,6 @@ model Listing {
   locationValue String
   userId String @db.ObjectId
   price Int
-  type String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   reservations Reservation[]

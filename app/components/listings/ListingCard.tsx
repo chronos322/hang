@@ -45,35 +45,28 @@ const ListingCard: React.FC<ListingCardProps> = ({
     e.stopPropagation();
 
     if (disabled) {
-      return;
+      return ;
     }
 
     onAction?.(actionId)
   }, [disabled, onAction, actionId]);
 
-  const price = useMemo(() => {
-    if (reservation) {
-      return reservation.totalPrice;
-    }
+  // const title = useMemo(() => {
+  //   if (reservation) {
+  //     return reservation.listing.title;
+  //   }
 
-    return data.price;
-  }, [reservation, data.price]);
-  const title = useMemo(() => {
-    if (reservation) {
-      return reservation.listing.title;
-    }
+  //   return data.title;
+  // }, [reservation, data.title]);
 
-    return data.title;
-  }, [reservation, data.title]);
+  // const priceType = useMemo(() => {
+  //   if (reservation?.listing.category==="Буудал") {
+  //     reservation.listing.type = "Хоногт"
+  //     return reservation.listing.type;
+  //   }
 
-  const priceType = useMemo(() => {
-    if (reservation?.listing.category==="Буудал") {
-      reservation.listing.type = "Хоногт"
-      return reservation.listing.type;
-    }
-
-    return data.type;
-  }, [reservation, data.type]);
+  //   return data.type;
+  // }, [reservation, data.type]);
 
   const reservationDate = useMemo(() => {
     if (!reservation) {
@@ -125,14 +118,14 @@ const ListingCard: React.FC<ListingCardProps> = ({
           </div>
         </div>
         <div className="font-semibold text-lg">
-          {title}
+          {data.title}
         </div>
         <div className="font-light text-neutral-500">
           {reservationDate || data.category}
         </div>
         <div className="flex flex-row items-center gap-1">
           <div className="font-semibold">
-            {/* {price} */}
+            {}
           </div>
           {!reservation && (
             <div className="font-light">{location?.region}, {location?.label}</div>
