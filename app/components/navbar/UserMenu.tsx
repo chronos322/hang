@@ -134,11 +134,11 @@ const UserMenu: React.FC<UserMenuProps> = ({
             ) : (
               <>
                 <MenuItem 
-                  label="Login" 
+                  label="Нэвтрэх" 
                   onClick={loginModal.onOpen}
                 />
                 <MenuItem 
-                  label="Sign up" 
+                  label="Бүртгүүлэх" 
                   onClick={registerModal.onOpen}
                 />
               </>
