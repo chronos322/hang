@@ -114,10 +114,10 @@ const RentModal = () => {
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.PRICE) {
-      return 'Create'
+      return 'Бүртгэх'
     }
 
-    return 'Next'
+    return 'Цааш'
   }, [step]);
 
   const secondaryActionLabel = useMemo(() => {
@@ -125,7 +125,7 @@ const RentModal = () => {
       return undefined
     }
 
-    return 'Back'
+    return 'Буцах'
   }, [step]);
 
   let bodyContent = (
@@ -185,21 +185,21 @@ const RentModal = () => {
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
           value={guestCount}
-          title="Guests" 
+          title="Зочид" 
           subtitle="Хэдэн хүний багтаамжтай вэ?"
         />
         <hr />
         <Counter 
           onChange={(value) => setCustomValue('roomCount', value)}
           value={roomCount}
-          title="Rooms" 
+          title="Өрөө" 
           subtitle="Хэдэн өрөөтэй вэ?"
         />
         <hr />
         <Counter 
           onChange={(value) => setCustomValue('bathroomCount', value)}
           value={bathroomCount}
-          title="Bathrooms" 
+          title="Ариун цэврийн өрөө" 
           subtitle="Хэдэн ариун цэврийн өрөөтэй вэ?"
         />
       </div>
