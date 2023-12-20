@@ -15,8 +15,8 @@ const ListingPage = async () => {
     return (
       <ClientOnly>
         <EmptyState
-          title="No favorites found"
-          subtitle="Looks like you have no favorite listings."
+          title="Таалагдсан амралт алга байна"
+          subtitle="Та амралтанд үнэлгээ өгж байгаагүй бололтой!"
         />
       </ClientOnly>
     );

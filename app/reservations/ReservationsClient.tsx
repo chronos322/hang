@@ -28,11 +28,11 @@ const ReservationsClient: React.FC<ReservationsClientProps> = ({
 
     axios.delete(`/api/reservations/${id}`)
     .then(() => {
-      toast.success('Reservation cancelled');
+      toast.success('Үйлчлүүлэгчийг цуцаллаа');
       router.refresh();
     })
     .catch(() => {
-      toast.error('Something went wrong.')
+      toast.error('Алдаа гарлаа.')
     })
     .finally(() => {
       setDeletingId('');
@@ -42,8 +42,8 @@ const ReservationsClient: React.FC<ReservationsClientProps> = ({
   return (
     <Container>
       <Heading
-        title="Reservations"
-        subtitle="Bookings on your properties"
+        title="Таньд ирсэн захиалга"
+        subtitle="Таний хүлээн авж буй захиалгуудын жагсаалт"
       />
       <div 
         className="
@@ -66,7 +66,7 @@ const ReservationsClient: React.FC<ReservationsClientProps> = ({
             actionId={reservation.id}
             onAction={onCancel}
             disabled={deletingId === reservation.id}
-            actionLabel="Cancel guest reservation"
+            actionLabel="Захиалгыг цуцлах"
             currentUser={currentUser}
           />
         ))}

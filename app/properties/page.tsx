@@ -23,8 +23,8 @@ const PropertiesPage = async () => {
     return (
       <ClientOnly>
         <EmptyState
-          title="No properties found"
-          subtitle="Looks like you have no properties."
+          title="Таньд үүсгэсэн амралт байхгүй байна"
+          subtitle="Та амралт үүсгэйгүй бололтой."
         />
       </ClientOnly>
     );

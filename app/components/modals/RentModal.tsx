@@ -259,7 +259,7 @@ const RentModal = () => {
         />
         <Input
           id="price"
-          label="Price"
+          label="Үнэ"
           formatPrice 
           type="number" 
           disabled={isLoading}
