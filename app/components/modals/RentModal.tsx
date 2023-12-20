@@ -231,7 +231,7 @@ const RentModal = () => {
         />
         <Input
           id="title"
-          label="Title"
+          label="Гарчиг"
           disabled={isLoading}
           register={register}
           errors={errors}
@@ -240,7 +240,7 @@ const RentModal = () => {
         <hr />
         <Input
           id="description"
-          label="Description"
+          label="Нэмэлт мэдээлэл"
           disabled={isLoading}
           register={register}
           errors={errors}
