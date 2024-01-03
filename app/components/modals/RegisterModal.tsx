@@ -46,7 +46,7 @@ const RegisterModal= () => {
 
     axios.post('/api/register', data)
     .then(() => {
-      toast.success('Registered!');
+      toast.success('Бүртгэгдлээ!');
       registerModal.onClose();
       loginModal.onOpen();
     })
@@ -71,7 +71,7 @@ const RegisterModal= () => {
       />
       <Input
         id="email"
-        label="Email"
+        label="Цахим хаяг"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -79,7 +79,7 @@ const RegisterModal= () => {
       />
       <Input
         id="name"
-        label="Name"
+        label="Нэр"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -87,7 +87,7 @@ const RegisterModal= () => {
       />
       <Input
         id="password"
-        label="Password"
+        label="Нууц үг"
         type="password"
         disabled={isLoading}
         register={register}
@@ -138,8 +138,8 @@ const RegisterModal= () => {
     <Modal
       disabled={isLoading}
       isOpen={registerModal.isOpen}
-      title="Register"
-      actionLabel="Continue"
+      title="Бүртгүүлэх"
+      actionLabel="Үргэлжлүүлэх"
       onClose={registerModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}

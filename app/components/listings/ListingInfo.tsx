@@ -9,7 +9,7 @@ import { SafeUser } from "@/app/types";
 import Avatar from "../Avatar";
 import ListingCategory from "./ListingCategory";
 
-import { Link } from "react-router-dom";
+
 
 const Map = dynamic(() => import('../Map'), { 
   ssr: false 

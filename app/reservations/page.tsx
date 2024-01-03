@@ -14,8 +14,8 @@ const ReservationsPage = async () => {
     return (
       <ClientOnly> 
         <EmptyState
-          title="Unauthorized"
-          subtitle="Please login"
+          title="Бүртгэлгүй байна"
+          subtitle="Бүртгүүлнэ үү"
         />
       </ClientOnly>
     )

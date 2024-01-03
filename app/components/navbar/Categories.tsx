@@ -2,26 +2,19 @@
 
 import { usePathname, useSearchParams } from 'next/navigation';
 import { GiForestCamp} from 'react-icons/gi';
-import { BiRestaurant , BiCoffeeTogo, BiBasketball,BiBeer, BiGasPump,BiCameraMovie} from 'react-icons/bi'
-import { FaShoppingCart, FaGamepad} from 'react-icons/fa';
-import { FaRegSnowflake } from "react-icons/fa";
-import { CgGym } from 'react-icons/cg';
-import { FiScissors } from 'react-icons/fi';
-import {HiCake} from 'react-icons/hi';
-import {RiHospitalLine} from 'react-icons/ri'
 
 import CategoryBox from "../CategoryBox";
 import Container from '../Container';
+
 import { BiBath } from "react-icons/bi";
-import IconYurt from './IconYurt';
 import { TbTent } from "react-icons/tb";
 import { FaUmbrellaBeach } from "react-icons/fa";
 import { MdMeetingRoom } from "react-icons/md";
 import { FaHouseChimneyMedical } from "react-icons/fa6";
-import { SiBathasu } from "react-icons/si";
 import { MdCabin } from "react-icons/md";
 import { GiDesert } from "react-icons/gi";
 import { TbBrandGoogleHome } from "react-icons/tb";
+
 export const categories = [
   {
     label: 'Гэр',

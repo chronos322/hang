@@ -14,8 +14,8 @@ const TripsPage = async () => {
     return (
       <ClientOnly>
         <EmptyState
-          title="Unauthorized"
-          subtitle="Please login"
+          title="Бүртгүүлээгүй байна"
+          subtitle="Бүртгүүлнэ үү"
         />
       </ClientOnly>
     );

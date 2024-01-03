@@ -75,7 +75,7 @@ const LoginModal = () => {
       />
       <Input
         id="email"
-        label="Email"
+        label="Цахим хаяг"
         disabled={isLoading}
         register={register}  
         errors={errors}
@@ -83,7 +83,7 @@ const LoginModal = () => {
       />
       <Input
         id="password"
-        label="Password"
+        label="Нууц үг"
         type="password"
         disabled={isLoading}
         register={register}
@@ -128,7 +128,7 @@ const LoginModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={loginModal.isOpen}
-      title="Login"
+      title="Нэвтрэх"
       actionLabel="Үргэлжлүүлэх"
       onClose={loginModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
