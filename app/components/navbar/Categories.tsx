@@ -4,7 +4,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import { GiForestCamp} from 'react-icons/gi';
 import { BiRestaurant , BiCoffeeTogo, BiBasketball,BiBeer, BiGasPump,BiCameraMovie} from 'react-icons/bi'
 import { FaShoppingCart, FaGamepad} from 'react-icons/fa';
-import { MdOutlineVilla } from 'react-icons/md';
+import { FaRegSnowflake } from "react-icons/fa";
 import { CgGym } from 'react-icons/cg';
 import { FiScissors } from 'react-icons/fi';
 import {HiCake} from 'react-icons/hi';
@@ -12,44 +12,36 @@ import {RiHospitalLine} from 'react-icons/ri'
 
 import CategoryBox from "../CategoryBox";
 import Container from '../Container';
-
-
-
+import { BiBath } from "react-icons/bi";
+import IconYurt from './IconYurt';
+import { TbTent } from "react-icons/tb";
+import { FaUmbrellaBeach } from "react-icons/fa";
+import { MdMeetingRoom } from "react-icons/md";
+import { FaHouseChimneyMedical } from "react-icons/fa6";
+import { SiBathasu } from "react-icons/si";
+import { MdCabin } from "react-icons/md";
+import { GiDesert } from "react-icons/gi";
+import { TbBrandGoogleHome } from "react-icons/tb";
 export const categories = [
   {
-    label: 'Буудал',
-    icon: MdOutlineVilla,
-    description: 'Энэ газар буудалтай илүү төстэй!',
+    label: 'Гэр',
+    icon: TbBrandGoogleHome,
+    description: 'Энэ газар гэр илүү төстэй!',
   },
   {
-    label: 'Ресторан',
-    icon: BiRestaurant,
-    description: 'Энэ газар зоогийн газартай илүү төстэй!',
+    label: 'Шовгор',
+    icon: TbTent,
+    description: 'Энэ газар Шовгор байшинтай илүү төстэй!'
   },
   {
-    label: 'Фитнес',
-    icon: CgGym,
-    description: 'Энэ газар Жимтэй илүү төстэй!'
+    label: 'Орон сууц',
+    icon: MdMeetingRoom,
+    description: 'Энэ газар орон сууцны өрөөтэй илүү төстэй!'
   },
   {
-    label: 'Кофе',
-    icon: BiCoffeeTogo,
-    description: 'Энэ газар зоогийн газартай илүү төстэй!'
-  },
-  {
-    label: 'Заал',
-    icon: BiBasketball,
-    description: 'Энэ газар илүү спорт заалтай төстэй!'
-  },
-  {
-    label: 'Дэлгүүр',
-    icon: FaShoppingCart,
-    description: 'Энэ газар илүү дэлгүүртэй төстэй!'
-  },
-  {
-    label: 'Салон',
-    icon: FiScissors,
-    description: 'Энэ газар илүү салонтой төстэй!'
+    label: 'Саун',
+    icon: BiBath,
+    description: 'Энэ газар илүү саунтай төстэй!'
   },
   {
     label: 'Амралт',
@@ -57,37 +49,26 @@ export const categories = [
     description: 'Энэ газар илүү амралтын газартай төстэй!'
   },
   {
-    label: 'PC',
-    icon: FaGamepad,
-    description: 'Энэ газар илүү ПС тоглоомын газартай төстэй!'
+    label: 'Сувилал',
+    icon: FaHouseChimneyMedical,
+    description: 'Энэ газар илүү сувилалын газартай төстэй!'
   },
   {
-    label: 'Паб',
-    icon: BiBeer,
-    description: 'Энэ газар илүү пабтай төстэй!'
+    label: 'Байшин',
+    icon: MdCabin,
+    description: 'Энэ газар илүү модон байшинтай төстэй!'
   },
   {
-    label: 'Бакери',
-    icon: HiCake,
-    description: 'Энэ газар илүү бакеритэй төстэй!'
+    label: 'Далайн эрэг',
+    icon: FaUmbrellaBeach,
+    description: 'Энэ газар далайн эрэгтэй илүү төстэй!'
   },
   {
-    label: 'Шатахуун',
-    icon: BiGasPump,
-    description: 'Энэ газар илүү шатахуун түгээх газартай төстэй!'
+    label: 'Говь',
+    icon: GiDesert,
+    description: 'Энэ газар говьтой төстэй!'
   },
-  {
-    label: 'Кино',
-    icon: BiCameraMovie,
-    description: 'Энэ газар илүү кино театртай төстэй!'
-  },
-  {
-    label: 'Эмнэлэг',
-    icon: RiHospitalLine,
-    description: 'Энэ газар илүү эмнэлэгтэй төстэй!'
-  }
 ]
-
 const Categories = () => {
   const params = useSearchParams();
   const category = params?.get('category');
