@@ -61,7 +61,7 @@ const Input: React.FC<InputProps> = ({
           disabled:opacity-70
           disabled:cursor-not-allowed
           ${formatPrice ? 'pl-9' : 'pl-4'}
-          ${errors[id] ? 'border-red' : 'border-neutral-300'}
+          ${errors[id] ? 'border-black' : 'border-neutral-300'}
           ${errors[id] ? 'focus:border-black' : 'focus:border-black'}
         `}
       />
